@@ -5,10 +5,13 @@
 
 body {
   font-family: Nunito;
+  background-image: url(../image/zodchego.jpg);
+  background-size: 100%;
 }
 
 .container {
-  max-width: 1110px;
+  position: relative;
+  max-width: 1160px;
   margin: auto;
 }
 
@@ -353,5 +356,97 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.color__top {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 110px;
+  margin-top: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 67px;
+}
+
+.header-title {
+  max-width: 477px;
+  height: 67px;
+}
+
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 67px;
+}
+
+.top__logo {
+  max-width: 186px;
+}
+
+.top__site {
+  margin-top: 5px;
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Russo One';
+}
+
+.contacts-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts__mail {
+  width: 26px;
+  height: 26px;
+}
+
+.contacts__inst {
+  width: 26px;
+  height: 26px;
+  margin-left: 11px;
+}
+
+.contacts__tel {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Russo One';
+  font-size: 20px;
+  line-height: 24px;
 }
 /*# sourceMappingURL=style.css.map */
