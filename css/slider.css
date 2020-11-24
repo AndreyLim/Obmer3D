@@ -46,7 +46,7 @@ body {
 /* Задание ширины изображения при поднесении к ней курсора */
 /* Данный стиль (li:hover) переопределит ul:hover */
 .accordian ul li:hover {
-  width: 600px;
+  width: 400px;
 }
 
 .accordian li img {
@@ -59,7 +59,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 600px;
+  width: 400px;
 }
 
 /* Стиль для ссылки */
@@ -68,5 +68,5 @@ body {
   color: #fff;
   text-decoration: none;
   padding: 20px;
-  font-size: 16px;
+  font-size: 12px;
 }

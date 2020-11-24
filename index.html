@@ -6,6 +6,8 @@
   <title>Лазерное сканирование</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/slidertwo.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -82,23 +84,25 @@
           </div>
           <!-- /.third-block -->
           <div class="four-block">
-            <span>Наши реализованные проекты</span>
+            <span class="four-block__title1">Наши реализованные проекты</span>
             <div class="slider-work">
               <div class="accordian">
                 <ul class="slider-work">
                   <!-- 1 элемент слайдера -->
                   <li class="slider-work__item">
                     <div class="image_title">
-                      <a href="#">Черника</a>
+                      <a href="#">Объект: Усадебный дом Рукавишникова, XVIII в, арх.И.Е.Старов.<br>
+                      Заказчик: ГКУ ЛО "Дирекция по сохранению объектов культурного наследия".</a>
                     </div>
                     <a href="#">
-                      <img src="image/scans/scan1.bmp" />
+                      <img src="image/scans/scan1.jpg" />
                     </a>
                   </li>
                   <!-- 2 элемент слайдера -->
                   <li class="slider-work__item">
                     <div class="image_title">
-                      <a href="#">Ягоды Годжи</a>
+                      <a href="#">Объект: Надгробие С.А.Строгановой в Некрополе 18 века.<br>
+                      Заказчик: Государственный музей городской скульптуры.</a>
                     </div>
                     <a href="#">
                       <img src="image/scans/scan2.jpg" />
@@ -107,7 +111,8 @@
                   <!-- 3 элемент слайдера -->
                   <li class="slider-work__item">
                     <div class="image_title">
-                      <a href="#">Можжевельник</a>
+                      <a href="#">Объект: "Караульный ("Готический") дом с воротами".<br>
+                      Заказчик: Федеральное государственное бюджетное учреждение культуры "Государственный музей-заповедник "Петергоф".</a>
                     </div>
                     <a href="#">
                       <img src="image/scans/scan3.jpg" />
@@ -116,7 +121,9 @@
                   <!-- 4 элемент слайдера -->
                   <li class="slider-work__item">
                     <div class="image_title">
-                      <a href="#">Малина</a>
+                      <a href="#">Объект: Музеефицированный участок стены правого фланка эскарпового фасада Зотова бастиона Петропавловской крепости.
+                        Закакзчик: СПб ГБУК "Государственный музей истории Санкт-Петербурга".
+                      </a>
                     </div>
                     <a href="#">
                       <img src="image/scans/scan4.jpg" />
@@ -124,7 +131,8 @@
                   </li>
                   <li class="slider-work__item">
                     <div class="image_title">
-                      <a href="#">Черника</a>
+                      <a href="#">Объект: "Дом С.Д. Шереметьева"<br>
+                      Заказчик: "Фонд - региональный оператор капитального ремонта общего имущества в многоквартирных домах"</a>
                     </div>
                     <a href="#">
                       <img src="image/scans/scan5.jpg" />
@@ -132,7 +140,7 @@
                   </li>
                   <li class="slider-work__item">
                     <div class="image_title">
-                      <a href="#">Черника</a>
+                      <a href="#">1111111</a>
                     </div>
                     <a href="#">
                       <img src="image/scans/scan6.jpg" />
@@ -140,7 +148,7 @@
                   </li>
                   <li class="slider-work__item">
                     <div class="image_title">
-                      <a href="#">Черника</a>
+                      <a href="#">1111111</a>
                     </div>
                     <a href="#">
                       <img src="image/scans/scan7.jpg" />
@@ -149,15 +157,27 @@
                 </ul>
               </div>
             </div>
-            <span>Наши Заказчики</span>
-            <div class="slider-partners">
+            <p class="four-block__title2">Наши Заказчики</p>
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="image/partners/metro.png" alt="Метрополитен СПб"></div>
+                <div class="swiper-slide"><img src="image/partners/petergof.png" alt="Петергоф"></div>
+                <div class="swiper-slide"><img src="image/partners/vodo.png" alt="Водоканал"></div>
+                <div class="swiper-slide"><img src="image/partners/zenit-football-club-seeklogo.com.ai" alt="Водоканал"></div>
+                ...
+              </div>
             </div>
           </div>
+          <!-- /.four-block -->
         </div>
         <!-- /.main-wrapper -->
         <div class="color-middle"></div>
       </div>
       <!-- /.container -->
    </section>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/main.js"></script>
 </body>
 </html>

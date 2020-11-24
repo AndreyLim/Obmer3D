@@ -514,13 +514,10 @@ template {
 .second-block__list {
   margin-top: 5px;
   margin-bottom: 0px;
+  padding-left: 26px;
   font-size: 16px;
   line-height: 27px;
   text-align: justify;
-}
-
-.second-block__item {
-  padding-left: 16px;
 }
 
 .second-block__title2 {
@@ -609,5 +606,17 @@ template {
 
 .list__item:before {
   content: "✓ ";
+}
+
+.four-block__title1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.four-block__title2 {
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
