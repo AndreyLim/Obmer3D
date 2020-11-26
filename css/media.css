@@ -13,3 +13,11 @@
     font-size: 11px;
   }
 }
+@media (max-width: 768px) {
+  .accordian ul:hover li {
+    width: 43px;
+  }
+  .accordian ul li:hover {
+    width: 280px;
+  }
+}
