@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/slidertwo.css">
+  <link rel="stylesheet" href="css/media.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -37,24 +38,30 @@
       <div class="container">
         <div class="main-wrapper">
           <div class="first-block">
-            <p class="first-block__hello">Вас приветствует компания <b>ООО”АксиомА”</b>, мы предлагаем услуги проведения работ по
-            лазерному сканированию и 3D
-            моделированию зданий и сооружений. Работа с объектами культурного наследия наша сильная сторона (имеем лицензию Минкульта). Более 100
-            реализованных
-            проектов по всей России, дали нам опыт, которым мы готовы поделиться с Вами.
-            Наше оборудование для обмерных работ выдаёт 1млн точек в секунду с погрешностью 2мм, это позволяет нам получить на
-            выходе качественную модель, что является главным фактором грамотного проекта, а также точной сметной документации.
-            </p>
-            <div class="first-block__video">
-            <video width="620" height="453" controls="controls" autoplay loop poster="image/scans/rukav_model.bmp" muted="muted">
+            <div class="first-block__text">
+              <p class="first-block__hello">Вас приветствует компания <b>ООО”АксиомА”</b>, мы предлагаем услуги проведения работ по
+                лазерному сканированию и 3D
+                моделированию зданий и сооружений. Работа с объектами культурного наследия наша сильная сторона (имеем лицензию
+                Минкульта). Более 100
+                реализованных
+                проектов по всей России, дали нам опыт, которым мы готовы поделиться с Вами.
+                Наше оборудование для обмерных работ выдаёт 1млн точек в секунду с погрешностью 2мм, это позволяет нам получить на
+                выходе качественную модель, что является главным фактором грамотного проекта, а также точной сметной документации.
+              </p>
+              <p class="first-block__hello2">Результаты выполненных обмерных работ передаются Заказчику в согласованном формате (в
+                большинстве случаев, в формате
+                .DWG).</p>
+            </div>
+            <!-- /.first-block text -->
+            <div>
+            <video class="first-block__video"  controls="controls" autoplay loop poster="image/scans/rukav_model.bmp" muted="muted">
               <source src="video/dom.webm" type='video/webm; codecs="vp8, vorbis"'>
             </div>
             <!-- /.first-block__video -->
           </div>
           <!-- /.first-block -->
           <div class="second-block">
-            <p class="second-block__text">Результаты выполненных обмерных работ передаются Заказчику в согласованном формате (в большинстве случаев, в формате
-            .DWG).</p>
+            
             <span class="second-block__title"><b>Лазерное сканирование применяется для:</b></span>
             <ul class="second-block__list">
               <li class="second-block__item">под­го­тов­ки фа­сад­ных чер­те­жей, пос­тро­ения по­этаж­ных пла­нов, се­чений и раз­верток;</li>
@@ -95,7 +102,7 @@
                       Заказчик: ГКУ ЛО "Дирекция по сохранению объектов культурного наследия".</a>
                     </div>
                     <a href="#">
-                      <img src="image/scans/scan1.jpg" />
+                      <img class="image__foto" src="image/scans/scan1.jpg" />
                     </a>
                   </li>
                   <!-- 2 элемент слайдера -->
@@ -105,7 +112,7 @@
                       Заказчик: Государственный музей городской скульптуры.</a>
                     </div>
                     <a href="#">
-                      <img src="image/scans/scan2.jpg" />
+                      <img class="image__foto" src="image/scans/scan2.jpg" />
                     </a>
                   </li>
                   <!-- 3 элемент слайдера -->
@@ -115,7 +122,7 @@
                       Заказчик: Федеральное государственное бюджетное учреждение культуры "Государственный музей-заповедник "Петергоф".</a>
                     </div>
                     <a href="#">
-                      <img src="image/scans/scan3.jpg" />
+                      <img class="image__foto" src="image/scans/scan3.jpg" />
                     </a>
                   </li>
                   <!-- 4 элемент слайдера -->
@@ -126,7 +133,7 @@
                       </a>
                     </div>
                     <a href="#">
-                      <img src="image/scans/scan4.jpg" />
+                      <img class="image__foto" src="image/scans/scan4.jpg" />
                     </a>
                   </li>
                   <li class="slider-work__item">
@@ -135,7 +142,17 @@
                       Заказчик: "Фонд - региональный оператор капитального ремонта общего имущества в многоквартирных домах"</a>
                     </div>
                     <a href="#">
-                      <img src="image/scans/scan5.jpg" />
+                      <img class="image__foto" src="image/scans/scan5.jpg" />
+                    </a>
+                  </li>
+                  <li class="slider-work__item">
+                    <div class="image_title">
+                      <a href="#">Объект: "Гидротехнический институт им.Б.Е. Веденеева"<br>
+                        Заказчик: ОАО "Всероссийский научно-исследовательский институт гидротехники имени Б.Е. Веденеева"
+                      </a>
+                    </div>
+                    <a href="#">
+                      <img class="image__foto" src="image/scans/scan6.jpg" />
                     </a>
                   </li>
                   <li class="slider-work__item">
@@ -143,15 +160,7 @@
                       <a href="#">1111111</a>
                     </div>
                     <a href="#">
-                      <img src="image/scans/scan6.jpg" />
-                    </a>
-                  </li>
-                  <li class="slider-work__item">
-                    <div class="image_title">
-                      <a href="#">1111111</a>
-                    </div>
-                    <a href="#">
-                      <img src="image/scans/scan7.jpg" />
+                      <img class="image__foto" src="image/scans/scan7.jpg" />
                     </a>
                   </li>
                 </ul>

@@ -5,13 +5,28 @@
 .first-block
   display: flex
   justify-content: space-between
+  &__text
+    display: flex
+    flex-direction: column
   &__hello
-    margin-top: 50px
+    margin-top: 25px
     margin-bottom: 0
-    max-width: 350px
+    max-width: 480px
     font-size: 16px
     line-height: 27px
     text-align: justify
+  &__hello2
+    margin-top: 0
+    margin-bottom: 0
+    max-width: 480px
+    font-size: 16px
+    line-height: 27px
+    text-align: justify
+    margin-bottom: 15px
+  &__video
+    margin-top: 30px
+    width: 490px
+    height: 350px
 .color
   &-middle
     position: absolute
@@ -52,7 +67,7 @@
     text-align: justify
   &__list
     margin-top: 5px
-    padding-left: 25px
+    padding-left: 12px
     font-size: 16px
     line-height: 27px
     text-align: justify
@@ -109,3 +124,40 @@
     font-size: 18px
     font-weight: bold
     text-align: center
+.button
+  &__back
+    min-width: 120px
+    min-height: 40px
+    margin-top: 15px
+    margin-bottom: 25px
+    padding: 10px
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #FFFFFF
+    background-color: #5B5E6F
+    border: none
+    border-radius: 4px
+.accordian
+  width: 845px
+  height: 300px
+  overflow: hidden
+  margin: 50px auto
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35)
+  -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35)
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35)
+.slider-work
+  &__item
+    width: 120px
+.slider-work
+  &__item:hover
+    width: 400px
+.image
+  &_title
+    width: 400px
+.swiper-container
+  padding-right: 50px
+  padding-left: 50px
+  width: 100%
+  height: 100%

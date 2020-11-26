@@ -1,0 +1,15 @@
+@media (max-width: 992px) {
+  .accordian ul:hover li {
+    width: 60px;
+  }
+  .accordian ul li:hover {
+    width: 280px;
+  }
+  .image_title a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 11px;
+  }
+}
