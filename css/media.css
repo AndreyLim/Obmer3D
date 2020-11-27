@@ -15,9 +15,20 @@
 }
 @media (max-width: 768px) {
   .accordian ul:hover li {
-    width: 43px;
+    width: 40px;
   }
   .accordian ul li:hover {
     width: 280px;
+  }
+}
+@media (max-width: 576px) {
+  .accordian ul:hover li {
+    width: 38px;
+  }
+  .accordian ul li:hover {
+    width: 200px;
+  }
+  .image_title a {
+    font-size: 9px;
   }
 }

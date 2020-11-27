@@ -6,3 +6,7 @@ autoplay: {
         disableOnInteraction: false,
       },
 });
+
+$(document).ready(function(){
+  $('.third-block__input--phone').mask('+7 (999) 999-99-99');
+});
