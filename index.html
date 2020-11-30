@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/slidertwo.css">
+  <link rel="stylesheet" href="css/zakaz.css">
+  <link rel="stylesheet" href="css/fontawesome.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
@@ -31,6 +33,26 @@
           <a href="tel:+7(812)334-90-49" class="contacts__tel">+7(812) 334-90-49</a>
         </div> 
       </div>
+        <div class="header-mini">
+          <div class="header-mini__top">
+            <div class="header-logo">
+              <img src="image/-header-logo8.png" alt="Аксиома - научно-проектная компания" class="top__logo">
+              <a href="http://akspro.ru" class="top__site">akspro.ru</a>
+            </div>
+            <div class="header-contacts">
+              <div class="contacts-icon">
+                <a href="mailto:3349049@gmail.com"><img src="image/icon-mail.svg" alt="icon-mail" class="contacts__mail"></a>
+                <a href="http://"><img src="image/icon-inst.svg" alt="icon-instagram" class="contacts__inst"></a>
+              </div>
+              <a href="tel:+7(812)334-90-49" class="contacts__tel">+7(812) 334-90-49</a>
+            </div>
+          </div>
+          <!-- /.header-mini__top -->
+          <div class="header-mini__bottom">
+            <img src="image/header-title-mini.png" alt="Лазерное сканирование, 3D моделирование" class="header__title">
+          </div>
+          <!-- /.header-mini__bottom -->
+        </div>
       <div class="color-top"></div>
     </div>
    </header>
@@ -97,7 +119,7 @@
           <!-- /.third-block -->
           <div class="four-block">
             <span class="four-block__title1">Наши реализованные проекты</span>
-            <div class="slider-work">
+            <div class="slider-works">
               <div class="accordian">
                 <ul class="slider-work">
                   <!-- 1 элемент слайдера -->
@@ -106,7 +128,7 @@
                       <a href="#">Объект: Усадебный дом Рукавишникова, XVIII в, арх.И.Е.Старов.<br>
                       Заказчик: ГКУ ЛО "Дирекция по сохранению объектов культурного наследия".</a>
                     </div>
-                    <a href="#">
+                    <a href="workpage1.html">
                       <img class="image__foto" src="image/scans/scan1.jpg" />
                     </a>
                   </li>
@@ -116,7 +138,7 @@
                       <a href="#">Объект: Надгробие С.А.Строгановой в Некрополе 18 века.<br>
                       Заказчик: Государственный музей городской скульптуры.</a>
                     </div>
-                    <a href="#">
+                    <a href="workpage2.html">
                       <img class="image__foto" src="image/scans/scan2.jpg" />
                     </a>
                   </li>
@@ -126,7 +148,7 @@
                       <a href="#">Объект: "Караульный ("Готический") дом с воротами".<br>
                       Заказчик: Федеральное государственное бюджетное учреждение культуры "Государственный музей-заповедник "Петергоф".</a>
                     </div>
-                    <a href="#">
+                    <a href="workpage3.html">
                       <img class="image__foto" src="image/scans/scan3.jpg" />
                     </a>
                   </li>
@@ -137,7 +159,7 @@
                         Закакзчик: СПб ГБУК "Государственный музей истории Санкт-Петербурга".
                       </a>
                     </div>
-                    <a href="#">
+                    <a href="workpage4.html">
                       <img class="image__foto" src="image/scans/scan4.jpg" />
                     </a>
                   </li>
@@ -146,7 +168,7 @@
                       <a href="#">Объект: "Дом С.Д. Шереметьева"<br>
                       Заказчик: "Фонд - региональный оператор капитального ремонта общего имущества в многоквартирных домах"</a>
                     </div>
-                    <a href="#">
+                    <a href="workpage5.html">
                       <img class="image__foto" src="image/scans/scan5.jpg" />
                     </a>
                   </li>
@@ -156,7 +178,7 @@
                         Заказчик: ОАО "Всероссийский научно-исследовательский институт гидротехники имени Б.Е. Веденеева"
                       </a>
                     </div>
-                    <a href="#">
+                    <a href="workpage6.html">
                       <img class="image__foto" src="image/scans/scan6.jpg" />
                     </a>
                   </li>
@@ -164,7 +186,7 @@
                     <div class="image_title">
                       <a href="#">1111111</a>
                     </div>
-                    <a href="#">
+                    <a href="workpage7.html">
                       <img class="image__foto" src="image/scans/scan7.jpg" />
                     </a>
                   </li>
@@ -180,9 +202,24 @@
                 <div class="swiper-slide"><img class="swiper-slide__image" src="image/partners/petergof.png" alt="Петергоф"></div>
                 <div class="swiper-slide"><img class="swiper-slide__image" src="image/partners/vodo.png" alt="Водоканал"></div>
                 <div class="swiper-slide"><img class="swiper-slide__image" src="image/partners/zenit-football-club-seeklogo.com.ai" alt="Водоканал"></div>
-                ...
               </div>
             </div>
+            <a href="#" id="popup__toggle" onclick="swa()">
+              <div class="circlephone" style="transform-origin: center;"></div>
+              <div class="circle-fill" style="transform-origin: center;"></div>
+              <div class="img-circle" style="transform-origin: center;">
+                <div class="img-circleblock" style="transform-origin: center;"></div>
+              </div>
+            </a>
+            <form id="overlay" action="send.php" method="POST">
+              <div class="popup">
+                <button class="close" title="Закрыть окно" onclick="swa2()"></button>
+                <input type="text" class="modalinput input third-block__input" placeholder="Ваше имя" name="name" required>
+                <input type="text" class="modalinput input third-block__input--phone" placeholder="Ваш телефон" name="phone" required
+                  minlength="18">
+                <button type="submit" class="button third-block__button">Отправить заявку</button>
+              </div>
+            </form>
           </div>
           <!-- /.four-block -->
         </div>

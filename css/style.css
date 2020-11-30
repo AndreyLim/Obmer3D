@@ -392,6 +392,10 @@ template {
   padding-left: 25px;
 }
 
+.header-mini {
+  display: none;
+}
+
 .header-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -785,6 +789,9 @@ template {
 }
 
 @media (max-width: 1200px) {
+  body {
+    background-image: url(../image/back4.jpg);
+  }
   .container {
     max-width: 960px;
   }
@@ -956,7 +963,7 @@ template {
 
 @media (max-width: 768px) {
   body {
-    background-image: url(../image/back3.jpg);
+    background-image: url(../image/back5.jpg);
   }
   .container {
     max-width: 576px;
@@ -1105,7 +1112,7 @@ template {
 
 @media (max-width: 576px) {
   body {
-    background-image: url(../image/back4.jpg);
+    background-image: url(../image/back6.jpg);
   }
   .container {
     max-width: 476px;
@@ -1129,10 +1136,10 @@ template {
     max-width: 80px;
   }
   .top__site {
-    font-size: 10px;
+    font-size: 12px;
   }
   .contacts__tel {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 13px;
   }
   .contacts__mail {
@@ -1146,11 +1153,11 @@ template {
   }
   .first-block__hello {
     max-width: 450px;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 13px;
   }
   .first-block__hello2 {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 13px;
     margin-bottom: 5px;
   }
@@ -1166,11 +1173,11 @@ template {
     font-size: 12px;
   }
   .second-block__list {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 13px;
   }
   .second-block__title2 {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 13px;
   }
   .third-block__title {
@@ -1267,14 +1274,14 @@ template {
   }
   .footer__address {
     width: 33%;
-    font-size: 10px;
+    font-size: 9px;
   }
   .footer__logo {
-    width: 110px;
+    width: 90px;
   }
   .footer__contacts {
     width: 33%;
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 
@@ -1283,17 +1290,61 @@ template {
     max-width: 340px;
   }
   .header-wrapper {
-    height: 60px;
+    display: none;
+  }
+  .header-mini {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header-mini__top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 60px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-mini__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
   }
   .header-logo {
-    height: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .header__title {
-    max-width: 200px;
+    min-width: 200px;
     height: 25px;
   }
   .header-contacts {
@@ -1303,11 +1354,10 @@ template {
     max-width: 60px;
   }
   .top__site {
-    font-size: 9px;
+    font-size: 12px;
   }
   .contacts__tel {
-    font-size: 8px;
-    line-height: 11px;
+    font-size: 10px;
   }
   .contacts__mail {
     width: 13px;
@@ -1317,6 +1367,16 @@ template {
     width: 13px;
     height: 13px;
     margin-left: 7px;
+  }
+  .footer__address {
+    width: 33%;
+    font-size: 10px;
+  }
+  .footer__logo {
+    width: 90px;
+  }
+  .footer__contacts {
+    width: 33%;
   }
 }
 /*# sourceMappingURL=style.css.map */
