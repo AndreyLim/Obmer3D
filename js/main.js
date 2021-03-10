@@ -2,9 +2,9 @@ var swiper = new Swiper('.swiper-container', {
 slidesPerView: 3,
 spaceBetween: 30,
 autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+  delay: 2500,
+  disableOnInteraction: false,
+	},
 });
 
 $(document).ready(function(){
@@ -22,4 +22,24 @@ function swa(){
 function swa2(){
 	b.style.visibility = 'hidden';
 	b.style.opacity = '0';
+}
+
+let sendForm = document.querySelector('data-toggle = modal');
+sendForm.addEventListener('click', openModal);
+
+function openModal() {
+  var modalOverlay = $(".modal__overlay");
+  var modalDialog = $(".modal__dialog");
+  modalOverlay.addClass("modal__overlay--visible");
+  modalDialog.addClass("modal__dialog--visible");
+}
+
+let closeButton = document.querySelector('.modal__button');
+closeButton.addEventListener('click', closeModal);
+
+  function closeModal() {
+  var modalOverlay = $(".modal__overlay");
+  var modalDialog = $(".modal__dialog");
+  modalOverlay.removeClass("modal__overlay--visible");
+  modalDialog.removeClass("modal__dialog--visible");
 }

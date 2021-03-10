@@ -110,10 +110,10 @@
               </ul>
             </div>
             <!-- /.third-block__text -->
-            <form class="third-block__form--mobile--hidden" action="send.php" method="POST">
+            <form class="third-block__form--mobile--hidden">
               <input type="text" class="input third-block__input" placeholder="Ваше имя" name="name" required>
               <input type="text" class="input third-block__input--phone" placeholder="Ваш телефон" name="phone" required minlength="18">
-              <button type="submit" class="button third-block__button">Отправить заявку</button>
+              <button type="submit" data-toggle = 'modal' class="button third-block__button">Отправить заявку</button>
             </form>
           </div>
           <!-- /.third-block -->
@@ -211,13 +211,13 @@
                 <div class="img-circleblock" style="transform-origin: center;"></div>
               </div>
             </a>
-            <form id="overlay" action="send.php" method="POST">
+            <form id="overlay">
               <div class="popup">
                 <button class="close" title="Закрыть окно" onclick="swa2()"></button>
                 <input type="text" class="modalinput input third-block__input" placeholder="Ваше имя" name="name" required>
                 <input type="text" class="modalinput input third-block__input--phone" placeholder="Ваш телефон" name="phone" required
                   minlength="18">
-                <button type="submit" class="button third-block__button">Отправить заявку</button>
+                <button type="submit" data-toggle = 'modal' class="button third-block__button">Отправить заявку</button>
               </div>
             </form>
           </div>
@@ -247,6 +247,13 @@
        <div class="color-top"></div>
      </div>
    </footer>
+   <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <span class="modal__text">Ваша заявка принята. В ближайшее время с Вами свяжется наш специалист.</span>
+        <button class="modal__button">Закрыть</button>
+      </div>
    <script src="js/jquery-3.5.1.min.js"></script>
    <script src="js/swiper-bundle.min.js"></script>
    <script src="js/jquery.validate.min.js"></script>
