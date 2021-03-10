@@ -1,0 +1,34 @@
+@media (max-width: 992px) {
+  .accordian ul:hover li {
+    width: 60px;
+  }
+  .accordian ul li:hover {
+    width: 280px;
+  }
+  .image_title a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 768px) {
+  .accordian ul:hover li {
+    width: 40px;
+  }
+  .accordian ul li:hover {
+    width: 280px;
+  }
+}
+@media (max-width: 576px) {
+  .accordian ul:hover li {
+    width: 38px;
+  }
+  .accordian ul li:hover {
+    width: 200px;
+  }
+  .image_title a {
+    font-size: 9px;
+  }
+}
