@@ -78,10 +78,10 @@
             <div class="first-block__content">
               <video class="first-block__video"  controls="controls" autoplay loop poster="image/scans/rukav_model.bmp" muted="muted">
                 <source src="video/dom.webm" type='video/webm; codecs="vp8, vorbis"'></video>
-              <form class="third-block__form--mobile--visible" action="send.php" method="POST">
-                <input type="text" class="input third-block__input" placeholder="Ваше имя" name="name" required>
-                <input type="text" class="input third-block__input" placeholder="Ваш телефон" name="phone" required minlength="18">
-                <button type="submit" class="button third-block__button">Отправить заявку</button>
+              <form id="javascript_form" class="third-block__form--mobile--visible" method="POST">
+                <input name="name" type="text" class="input third-block__input" placeholder="Ваше имя" name="name" required>
+                <input name="phone" type="text" class="input third-block__input" placeholder="Ваш телефон" name="phone" required minlength="18">
+                <button id="js_send" type="submit" class="button third-block__button">Отправить заявку</button>
             </form>
             </div>
             <!-- /.first-block__video -->
@@ -113,7 +113,7 @@
             <form class="third-block__form--mobile--hidden">
               <input type="text" class="input third-block__input" placeholder="Ваше имя" name="name" required>
               <input type="text" class="input third-block__input--phone" placeholder="Ваш телефон" name="phone" required minlength="18">
-              <button type="submit" data-toggle = 'modal' class="button third-block__button">Отправить заявку</button>
+              <button type="submit" data-toggle-modal class="button third-block__button">Отправить заявку</button>
             </form>
           </div>
           <!-- /.third-block -->
@@ -211,13 +211,13 @@
                 <div class="img-circleblock" style="transform-origin: center;"></div>
               </div>
             </a>
-            <form id="overlay">
-              <div class="popup">
+            <form id="overlay" >
+              <div class="popup" method="POST">
                 <button class="close" title="Закрыть окно" onclick="swa2()"></button>
                 <input type="text" class="modalinput input third-block__input" placeholder="Ваше имя" name="name" required>
                 <input type="text" class="modalinput input third-block__input--phone" placeholder="Ваш телефон" name="phone" required
                   minlength="18">
-                <button type="submit" data-toggle = 'modal' class="button third-block__button">Отправить заявку</button>
+                <button type="submit" data-toggle-modal class="button third-block__button">Отправить заявку</button>
               </div>
             </form>
           </div>
